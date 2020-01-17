@@ -12,31 +12,47 @@
     </head>
 
     <body>
-        <nav>
-            <a></a>
-            <button>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="#">Contact Me!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div>
-                <ul>
-                    <li>
-                        <a>
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Links
                         </a>
-                        <div>
-                            <a></a>
-                            <a></a>
-                            <a></a>
-                            <a></a>
-                            <a></a>
-                            <a></a>
-                        </div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/chris-arizpe-15106118a/" target="_blank">LinkedIn</a>
+                        <a class="dropdown-item" href="https://github.com/reducks3000" target="_blank">GitHub!</a>
+                        <a class="dropdown-item" href="/assets/html/about.html">About</a>
+                        <a class="dropdown-item" href="/assets/html/portfolio.html">Portfolio</a>
+                        <a class="dropdown-item" href="/assets/html/about.html">Home</a>
                     </li>
                 </ul>
             </div>
         </nav>
-    
+        <br>
+        <br>
+        <div id="main-container" class="container">
+            <div class="main-section">
+                <form id="contactForm" action="mailto:reducks3000@gmail.com" method="post" enctype="text/plain">
+                    <p>Name: <input type="text" name="name"/></p>
+                    <p>Email: <input type="text" name="email"/></p>
+                    <p>Message:
+                    <br />
+                    <textarea class="form-control z-depth-1" name="comments" rows = "12">Send me an email!!.</textarea>
+                    <br>
+                    <p><input class="button" type="submit" name="submit" value="Send" />
+                    <input class="button" type="reset" name="reset" value="Clear Form" />
+                    </p>
+                </form>
+            </div>
+        </div>
     </body>
 
 </html>
